@@ -184,10 +184,6 @@ section {
     color: var(--warna-utama);
 }
 
-.primary-color {
-    color: var(--warna-utama);
-}
-
 .kontener {
     margin: 2rem;
     padding: 3rem;
@@ -453,7 +449,7 @@ button img {
     }
 
     #home {
-        background-image: url(../assets/bgmobile.png);
+        background-image: url(../assets/bgmobile-01.png);
     }
 
     * {
