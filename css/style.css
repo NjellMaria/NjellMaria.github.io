@@ -30,7 +30,11 @@ html {
     overflow-x: hidden;
 }
 
-.nav {
+h1 {
+    color: var(--warna-utama);
+}
+
+.navigation {
     position: fixed;
     top: 0;
     left: 0;
@@ -114,7 +118,6 @@ section {
 
 .bagiankhusus h1 {
     font-size: 4rem;
-    color: var(--warna-utama);
 }
 
 .bagiankhusus button {
@@ -157,10 +160,16 @@ section {
     background-color: var(--warna-navy);
     border-radius: 2rem;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    text-align: left;
+    color: var(--warna-utama);
 }
 
 .tentang-bagiankhusus.start {
-    transform: translateX(-10rem) !important;
+    transform: translateX(-4rem) !important;
+}
+
+.tentang-bagiankhusus h1 {
+    text-align: center;
 }
 
 .tentang-bagiankhusus h3 {
@@ -194,10 +203,6 @@ section {
     left: 50%;
     margin-left: -3px;
     /* top: 0; */
-}
-
-.kontener h1 {
-    color: var(--warna-utama);
 }
 
 .kontener p {
@@ -239,10 +244,6 @@ button img {
     color: var(--warna-utama);
 }
 
-.footer h1 {
-    color: var(--warna-utama);
-}
-
 .input-group {
     padding: 1rem;
     border: .125rem solid var(--warna-utama);
@@ -260,13 +261,24 @@ button img {
     background-color: transparent;
 }
 
+::placeholder {
+    color: var(--warna-utama);
+    opacity: 0.5;
+    /* Firefox */
+}
+
+::-ms-input-placeholder {
+    /* Edge 12-18 */
+    color: var(--warna-utama);
+}
+
 .input-group button {
     padding: .5rem 1rem;
     outline: none;
     border: none;
     background-color: var(--warna-utama);
     border-radius: 10px;
-    color: var(--warna-biru);
+    color: var(--warna-ungu);
     font-weight: 600;
     cursor: pointer;
 }
@@ -312,6 +324,15 @@ button img {
 
 .bagiankanan.start {
     transform: translateX(0);
+}
+
+.kontener.start {
+    transform: translateY(0);
+}
+
+.kontener {
+    transform: translateY(10%);
+    transition: 1s ease-in-out;
 }
 
 .zoom {
@@ -448,7 +469,6 @@ button img {
     }
 
     .kontener h1 {
-        color: var(--warna-kehitaman);
         font-size: 20px !important;
         margin: 2rem;
     }
