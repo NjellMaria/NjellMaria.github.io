@@ -219,7 +219,6 @@ iframe {
 
 .table {
     border-collapse: collapse;
-    /* background-color: var(--warna-pink); */
 }
 
 .table td {
@@ -227,9 +226,13 @@ iframe {
     border-left: 0.01rem solid var(--warna-navy);
 }
 
-img {
+button img {
     width: 35.89rem;
     height: 20rem;
+}
+
+.image-item button {
+    display: contents;
 }
 
 .footer {
@@ -284,6 +287,11 @@ img {
     padding: 10px;
     z-index: 99;
     display: none;
+}
+
+.modal-body img {
+    width: 100%;
+    height: 100%;
 }
 
 /* ANIMATION */
