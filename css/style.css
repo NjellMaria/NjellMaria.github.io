@@ -327,7 +327,7 @@ button img {
 }
 
 .kontener {
-    transform: translateY(10%);
+    transform: translateY(5%);
     transition: 1s ease-in-out;
 }
 
